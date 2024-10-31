@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Water ship -->
+<shipBlueprint name="PLAYER_SHIP_SEAWEED" layout="mup_caretaker_rvs_sea" img="mup_caretaker_rvs_sea">
+	<class>Caretaker Cruiser</class>
+	<name>Chlorophyta</name>
+	<desc>Though most Orchid Aquaforms prefer the comfort of their underwater paradises in the garden-worlds, a rare few venture out into space using Orchid vessels modified with Aquarian life support technology.</desc>
+	<systemList>
+		<battery power="1" max="2" room="10" start="false" img="room_battery_13" />
+		<cloaking power="1" room="12" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="3" start="false">
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="11" start="true" img="room_doors_5">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<drones power="2" max="8" room="8" start="false" img="room_drones_18" />
+		<engines power="2" room="6" start="true" img="room_engines_rvs_seaweed">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="false" img="room_hacking_2" />
+		<medbay power="1" room="3" start="true" img="room_medbay_3">
+			<slot>
+				<number>3</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="15" start="false" img="room_mind_9" />
+		<oxygen power="1" room="14" start="true" img="room_oxygen_12" />
+		<pilot power="1" room="0" start="true" img="room_pilot_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="13" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" max="8" room="5" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="7" start="false" />
+		<weapons power="3" max="8" room="2" start="true" img="room_weapons_3">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="4" count="4">
+		<weapon name="LASER_FROST_1" />
+		<weapon name="KERNEL_1_ELITE" />
+    </weaponList>
+	<droneList drones="0" count="2" />
+	<health amount="30" />
+	<maxPower amount="8" />
+	<crewCount amount="3" class="rvs_orchid_aquaform" />
+	<crewCount amount="1" class="orchid_caretaker" />
+    <aug name="RVS_WATER_FILLED_INFO" />
+	<shieldImage>mup_standard2</shieldImage>
+	<cloakImage>mup_caretaker_a</cloakImage>
+    <mv-mapImage>map_icon_mup_caretaker_a</mv-mapImage>
+</shipBlueprint>
+
+<!-- Water augment -->
+<augBlueprint name="RVS_WATER_FILLED">
+	<title>Aquatic Life Support</title>
+	<desc>YOU SHOULD NEVER SEE THIS</desc>
+	<cost>0</cost>
+	<bp>16</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+<augBlueprint name="RVS_WATER_FILLED_INFO">
+	<title>Aquatic Life Support</title>
+	<desc>Your ship's life support system is designed for aquatic lifeforms. Aerobic crew which can't breathe underwater will start suffocating after a short time. Allied crew can breath underwater with Respirators. Non-aquatic corporeal crew move slower. Fires are extinguished instantly.
+
+NOTE: This augment is informational only. It will be removed at the start of a run, but its effects will persist.</desc>
+	<cost>0</cost>
+	<bp>16</bp>
+	<rarity>0</rarity>
+	<stackable>false</stackable>
+</augBlueprint>
+
+<!-- Orchid Aquaform crew -->
+<crewBlueprint name="rvs_orchid_aquaform">
+	<title>Orchid Aquaform</title>
+	<short>Aquaform</short>
+	<desc>An uncommon Floral adaptation, these members of the Gathering are rarely seen, prefering to maintain their habitats in the ocean regions of the garden-worlds.
+
+	Inherited Orchid stats: slightly reduced suffocation damage</desc>
+	<cost>55</cost>
+	<bp>2</bp>
+	<rarity>5</rarity>
+	<powerList>
+		<power>Can breathe and gains a speed boost underwater</power>
+		<power>Rapidly refills oxygen while underwater</power>
+		<power>Takes 75% more damage from fire if owned by a ship without Aquatic Life Support</power>
+		<power>Friendly crew in the same room gain 20% Max Health, fire resistance, suffocation resistance, and healing speed</power>
+	</powerList>
+	<colorList>
+		<layer><!-- Layer 1 - Leaves -->
+			<color r="0" g="0" b="0" a="0"/>
+			<color r="191" g="234" b="32" a="0.7"/>
+			<color r="0" g="229" b="237" a="0.7"/>
+			<color r="255" g="206" b="255" a="0.7"/>
+		</layer>
+		<layer><!-- Layer 2 - Flower -->
+			<color r="0" g="0" b="0" a="0"/>
+			<color r="0" g="71" b="255" a="0.6"/>
+			<color r="255" g="222" b="0" a="0.6"/>
+			<color r="138" g="82" b="255" a="0.7"/>
+			<color r="246" g="18" b="195" a="0.93"/>
+			<color r="124" g="187" b="235" a="0.93"/>
+			<color r="255" g="148" b="0" a="0.93"/>
+			<color r="255" g="119" b="205" a="1"/>
+			<color r="245" g="60" b="0" a="1"/>
+			<color r="255" g="238" b="0" a="1"/>
+			<color r="214" g="43" b="161" a="1"/>
+			<color r="80" g="180" b="210" a="1"/>
+		</layer>
+		<layer><!-- Layer 3 - That part -->
+			<color r="0" g="0" b="0" a="0"/> <!--transparent-->
+			<color r="252" g="222" b="93" a="1"/> <!--yellow-->
+			<color r="255" g="186" b="0" a="0.8"/> <!--orange-->
+		</layer>
+	</colorList>
+</crewBlueprint>
+
+<!-- Show ability to breathe underwater for all relevant vanilla crew -->
+<mod:findName type="crewBlueprint" name="slug">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="slug_saboteur">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="slug_hektar">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="slug_hektar_box">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="slug_clansman">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="slug_ranger">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="slug_knight">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_slocknog">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_irwin">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_irwin_demon">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_nights">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_sylvan">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_billy">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_billy_box">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="dylan">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="nexus_sylvan_cel">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="sylvanclan">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="sylvan1d">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="sylvanrebel">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="sylvansans">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="sylvanleah">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="sylvanrick">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="prime">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="nexus_sylvan_gman">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="beans">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="shell">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="shell_mechanic">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="shell_scientist">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="shell_guardian">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="shell_radiant">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="crewBlueprint" name="unique_alkali">
+    <mod:findLike type="powerList">
+        <mod-append:power>Can breathe underwater</mod-append:power>
+    </mod:findLike>
+</mod:findName>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Appends -->
+<mod:findName type="blueprintList" name="LIST_CREW_ALIENS">
+	<mod-append:name>rvs_orchid_aquaform</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_CREW_ORCHID">
+	<mod-append:name>rvs_orchid_aquaform</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_CREW_FLORAL">
+	<mod-append:name>rvs_orchid_aquaform</mod-append:name>
+</mod:findName>
+<mod:findName type="blueprintList" name="LIST_CREW_MORPH_ORCHID">
+	<mod-append:name>rvs_orchid_aquaform</mod-append:name>
+</mod:findName>
+
+<!-- These guys are faster in water and can't drown -->
+<blueprintList name="LIST_CREW_AQUATIC">
+	<name>rvs_orchid_aquaform</name>
+</blueprintList>
+
+<!-- These guys aren't slowed by water and can't drown -->
+<blueprintList name="LIST_CREW_AQUA_IMMUNE">
+	<name>engi_separatist_nano</name>
+	<name>pony_engi_nano</name>
+    
+	<name>zoltan_osmian_hologram</name>
+	<name>hologram</name>
+    
+    <!-- Crew in the following lists are also treated as being in LIST_CREW_AQUA_IMMUNE by hyperspace.xml and water.lua:
+    LIST_CREW_GHOST
+    LIST_CREW_SLUG
+    LIST_CREW_SHELL
+    -->
+</blueprintList>
+
+<!-- This only exists as a req for guard interactions -->
+<blueprintList name="LIST_CREW_ORCHID_GUARD_INTERACT">
+	<name>orchid</name>
+	<name>rvs_orchid_aquaform</name>
+</blueprintList>

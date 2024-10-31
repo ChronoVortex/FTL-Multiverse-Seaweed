@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Orchid Aquaform -->
+<animSheet name="rvs_orchid_aquaform" w="315" h="560" fw="35" fh="35">people/rvs_orchid_aquaform_base.png</animSheet>
+<anim name="rvs_orchid_aquaform_walk_down">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="0" y="15"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_walk_left">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="4" y="15"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_walk_right">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="0" y="14"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_walk_up">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="4" y="14"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_repair">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="9" x="0" y="13"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_type_down">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="0" y="12"/>
+	<time>0.75</time>
+</anim>
+<anim name="rvs_orchid_aquaform_type_left">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="4" y="12"/>
+	<time>0.75</time>
+</anim>
+<anim name="rvs_orchid_aquaform_type_right">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="0" y="11"/>
+	<time>0.75</time>
+</anim>
+<anim name="rvs_orchid_aquaform_type_up">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="4" y="11"/>
+	<time>0.75</time>
+</anim>
+<anim name="rvs_orchid_aquaform_fire_down">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="0" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_fire_left">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="4" y="10"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_fire_right">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="0" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_fire_up">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="4" x="4" y="9"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_punch_down">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="7" x="0" y="8"/>
+	<time>2.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_punch_up">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="7" x="0" y="7"/>
+	<time>2.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_shoot_down">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="5" x="0" y="6"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_shoot_left">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="5" x="0" y="5"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_shoot_right">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="5" x="0" y="4"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_shoot_up">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="5" x="0" y="3"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_teleport">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="9" x="0" y="2"/>
+	<time>0.5</time>
+</anim>
+<anim name="rvs_orchid_aquaform_death_right">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="9" x="0" y="1"/>
+	<time>1.0</time>
+</anim>
+<anim name="rvs_orchid_aquaform_clone">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="7" x="2" y="0"/>
+	<time>0.75</time>
+</anim>
+<anim name="rvs_orchid_aquaform_portrait">
+	<sheet>rvs_orchid_aquaform</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>1</time>
+</anim>
+
+<!-- Orchid Aquaform buff spore effect -->
+<animSheet name="spores_buff_aqua" w="352" h="32" fw="32" fh="32">people/spores_buff_aqua.png</animSheet>
+<anim name="spores_buff_aqua">
+	<sheet>spores_buff_aqua</sheet>
+	<desc length="11" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<!-- Room water effect -->
+<animSheet name="submerged_bottom" w="9800" h="35" fw="35" fh="35">effects/submerged_bottom.png</animSheet>
+<anim name="submerged_bottom">
+	<sheet>submerged_bottom</sheet>
+	<desc length="280" x="0" y="0"/>
+	<time>20</time>
+</anim>
+<animSheet name="submerged_1x2" w="70" h="70" fw="35" fh="70">effects/submerged_1x2.png</animSheet>
+<anim name="submerged_1x2">
+	<sheet>submerged_1x2</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="submerged_2x1" w="140" h="35" fw="70" fh="35">effects/submerged_2x1.png</animSheet>
+<anim name="submerged_2x1">
+	<sheet>submerged_2x1</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1</time>
+</anim>
+<animSheet name="submerged_2x2" w="140" h="70" fw="70" fh="70">effects/submerged_2x2.png</animSheet>
+<anim name="submerged_2x2">
+	<sheet>submerged_2x2</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1</time>
+</anim>

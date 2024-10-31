@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mod:findName type="sectorDescription" name="SECTOR_GATHERING">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="rvs_orchid_aquaform" rarity="4"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECTOR_GATHERING_UNIQUE">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="rvs_orchid_aquaform" rarity="3"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECRET_ANCIENT">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="rvs_orchid_aquaform" rarity="0"/>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="sectorDescription" name="SECRET_ROYAL">
+    <mod:findLike type="rarityList">
+        <mod-append:blueprint name="rvs_orchid_aquaform" rarity="0"/>
+    </mod:findLike>
+</mod:findName>

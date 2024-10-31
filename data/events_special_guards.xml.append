@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Make it so Aquaforms can act like Orchids for guards -->
+<mod:findName type="event" name="GUARD_ORCHID_INTERACT">
+	<mod:findLike type="choice">
+        <mod:selector req="orchid" />
+        <mod:setAttributes req="LIST_CREW_ORCHID_GUARD_INTERACT" />
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="event" name="GUARD_ROCK">
+	<mod:findLike type="choice">
+        <mod:selector req="orchid" />
+        <mod:setAttributes req="LIST_CREW_ORCHID_GUARD_INTERACT" />
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="event" name="START_ASTEROID_ROCK">
+	<mod:findLike type="choice">
+        <mod:findLike type="event">
+            <mod:findLike type="choice">
+                <mod:selector req="orchid" />
+                <mod:setAttributes req="LIST_CREW_ORCHID_GUARD_INTERACT" />
+            </mod:findLike>
+        </mod:findLike>
+    </mod:findLike>
+</mod:findName>
+<mod:findName type="event" name="GUARD_GARDEN_SUPPORT">
+	<mod:findLike type="choice">
+        <mod:selector req="orchid" />
+        <mod:setAttributes req="LIST_CREW_ORCHID_GUARD_INTERACT" />
+    </mod:findLike>
+</mod:findName>
